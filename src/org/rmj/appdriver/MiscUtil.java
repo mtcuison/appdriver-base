@@ -372,7 +372,7 @@ public class MiscUtil {
                 loRS = loStmt.executeQuery(lsSQL);
                 loRS.next();
                 System.out.println(loRS.getString(1));
-                lsPref = lsPref + "20";//;loRS.getString(1).substring(2);
+                lsPref = lsPref + loRS.getString(1).substring(2);
                 System.out.println(lsPref);
             } 
             catch (SQLException ex) {
